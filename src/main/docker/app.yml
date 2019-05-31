@@ -1,0 +1,22 @@
+version: '2'
+services:
+  jhipsterapigateway-app:
+    image: jhipsterapigateway
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - SPRING_PROFILES_ACTIVE=prod,swagger
+      - MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED=true
+      - SPRING_DATASOURCE_URL=jdbc:mysql://jhipsterapigateway-mysql:3306/jhipsterapigateway?useUnicode=true&characterEncoding=utf8&useSSL=false
+      - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+      - SPRING_DATA_JEST_URI=http://jhipsterapigateway-elasticsearch:9200
+      - SPRING_ELASTICSEARCH_REST_URIS=http://jhipsterapigateway-elasticsearch:9200
+    ports:
+      - 8040:8040
+  jhipsterapigateway-mysql:
+    extends:
+      file: mysql.yml
+      service: jhipsterapigateway-mysql
+  jhipsterapigateway-elasticsearch:
+    extends:
+      file: elasticsearch.yml
+      service: jhipsterapigateway-elasticsearch

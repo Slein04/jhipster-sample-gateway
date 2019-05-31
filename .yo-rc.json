@@ -1,0 +1,44 @@
+{
+  "generator-jhipster": {
+    "applicationType": "gateway",
+    "gitCompany": "",
+    "baseName": "jHipsterApiGateway",
+    "packageName": "be.fgov.justx.sample.gateway",
+    "packageFolder": "be/fgov/justx/sample/gateway",
+    "serverPort": 8040,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "enableSwaggerCodegen": "true",
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "protractor"
+    ],
+    "enableTranslation": false,
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "6.0.1",
+    "jwtSecretKey": "YzRiZGE4YmZiM2Y1ZmEwN2E4ZTVkMTViYTVmZWNmZWJkOWIyMTRhOWU5N2E3ZTNkZmI1ZTFkZjBhZWIxOTZlMWQ1M2M5NWYzYmUwOGQ2NzQ3OGY3NTMwZDM3MzU0Zjc0NDFkZDVjNDAyY2FhMzU4NmIwMjE2Mjg1NWE3ZGRjMzg=",
+    "clientTheme": "none",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "Slein04",
+  "repository-name": "jhipster-sample-gateway"
+}
